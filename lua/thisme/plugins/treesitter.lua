@@ -1,10 +1,10 @@
 return {
   {  "nvim-treesitter/nvim-treesitter",
-  --event = { "BufReadPre", "BufNewFile" },
+  event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
-  --dependencies = {
-  --  "windwp/nvim-ts-autotag",
-  --},
+  dependencies = {
+    "windwp/nvim-ts-autotag",
+  },
   config = function()
   
   require'nvim-treesitter.configs'.setup {
@@ -12,6 +12,8 @@ return {
 
 auto_install = true,
 
+indent = { enable = true },
+autotag= { enable = true, },
   -- List of parsers to ignore installing (or "all")
   ignore_install = { "javascript" },
   highlight = {
@@ -26,6 +28,16 @@ auto_install = true,
     end,
     additional_vim_regex_highlighting = false,
   },
+
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<C-space>",
+      node_incremental = "<C-space>",
+      scope_incremental = false,
+      node_decremental = "<bs>",
+    }
+  }
  }
 end,
 }
