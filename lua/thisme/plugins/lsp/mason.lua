@@ -28,15 +28,16 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-       -- "gopls",
-        --"htmx",
-        --"cssls",
+       "gopls",
+        "html",
+       -- "htmx_lsp",
+        "cssls",
         "svelte",
         "lua_ls",
         --"graphql",
         --"emmet_ls",
         --"prismals",
-        "pyright",
+        --"pyright",
       },
     -- auto install configured servers (with lsp-config)
     automatic_installation = true,
