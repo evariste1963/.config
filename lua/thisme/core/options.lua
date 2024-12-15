@@ -19,6 +19,12 @@ opt.smartcase = true -- if you include mixed case in your search, assumes you wa
 
 opt.cursorline = true
 
+--used in visual block mode only - ctrl-v
+opt.virtualedit = "block"
+
+--preview chnages live in split window
+opt.inccommand = "split"
+
 -- turn on termguicolors for tokyonight colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
@@ -28,7 +34,7 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
--- clipboard
+-- synchronises the system clipboard with the neovim clipboard
 --opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 opt.clipboard = "unnamedplus"
 -- split windows

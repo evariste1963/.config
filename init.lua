@@ -14,6 +14,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end,
 })
 
+--opening the internal neovim terminal
 vim.keymap.set("n", "<space>st", function()
   vim.cmd.vnew()
   vim.cmd.term()

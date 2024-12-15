@@ -9,9 +9,13 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
-vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ {  import = "thisme.plugins"  }, { import = "thisme.plugins.lsp" }}, {
+--making lazy code available to pluggins - rtp = run time path
+vim.opt.rtp:prepend(lazypath)
+-- equivelant to
+-- vim.opt.rtp.prepend(vim.opt.rtp, lazypath)
+
+require("lazy").setup({ { import = "thisme.plugins" }, { import = "thisme.plugins.lsp" } }, {
   checker = {
     enabled = true,
     notify = false,
