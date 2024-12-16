@@ -123,6 +123,9 @@ return {
               -- make the language server recognize "vim" global
               diagnostics = {
                 globals = { "vim" },
+                disable = { "missing-parameters", "missing-fields" },
+                --undefined_global = false,
+                -- missing_parameters = false, --fixes warnings about missing fields in treesitter.lua
               },
               completion = {
                 callSnippet = "Replace",
