@@ -5,7 +5,7 @@ vim.opt.clipboard = "unnamedplus"
 
 -- this is just a test to see if the ssh connection with github works in lazygit now
 -- this is another test from work
---
+-- and again
 vim.api.nvim_create_autocmd("TermOpen", {
   group = vim.api.nvim_create_augroup("custom-term-open", { clear = true }),
   callback = function()
