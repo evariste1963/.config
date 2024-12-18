@@ -7,8 +7,6 @@ return {
   --dependencies = { { "echasnovski/mini.icons", opts = {} } },
   dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
 
-  vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),
-
   -- require("oil").setup(),
   config = function()
     require("oil").setup({
@@ -212,5 +210,9 @@ return {
         border = "rounded",
       },
     })
+    vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+    -- Open parent directory in floating window
+    vim.keymap.set("n", "<space>-", require("oil").toggle_float)
   end,
 }
