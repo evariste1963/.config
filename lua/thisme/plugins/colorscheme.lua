@@ -15,7 +15,7 @@ return {
     local border = "#547998"
 
     require("tokyonight").setup({
-      style = "storm",
+      style = "night",
       transparent = transparent,
       styles = {
         sidebars = transparent and "transparent" or "dark",
