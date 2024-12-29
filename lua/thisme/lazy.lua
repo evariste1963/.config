@@ -15,7 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 -- equivelant to
 -- vim.opt.rtp.prepend(vim.opt.rtp, lazypath)
 
-require("lazy").setup({ { import = "thisme.plugins" }, { import = "thisme.plugins.lsp" } }, {
+require("lazy").setup({
+  { import = "thisme.plugins" },
+  { import = "thisme.plugins.lsp" },
+}, {
   checker = {
     enabled = true,
     notify = false,
