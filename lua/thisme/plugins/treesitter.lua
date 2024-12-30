@@ -8,14 +8,24 @@ return {
     },
     config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+        ensure_installed = {
+          "c",
+          "lua",
+          "vim",
+          "vimdoc",
+          "query",
+          "markdown",
+          "markdown_inline",
+          "javascript",
+          "svelte",
+        },
 
         auto_install = true,
 
         indent = { enable = true },
         autotag = { enable = true },
         -- List of parsers to ignore installing (or "all")
-        ignore_install = { "javascript" },
+        -- ignore_install = { "javascript" },
         highlight = {
           enable = true,
           -- disable = { "c", "rust" },
