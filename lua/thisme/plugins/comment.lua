@@ -208,3 +208,11 @@ node_decremental = "<bs>", ]]
 --
 --[[ maximizer
  { "<leader>sm", "<cmd>MaximizerToggle<CR>", desc = "Maximize/minimize a split" } ]]
+
+--[[ moving code
+ddp = moves code down a line
+ddkP = moves code up a line
+----- dd6kP = move a line up 6 lines
+---and...
+----- ddP = doesn't move the line anywhere!!!
+]]
