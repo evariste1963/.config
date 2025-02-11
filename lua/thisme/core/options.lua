@@ -43,6 +43,8 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+opt.backup = false
+opt.writebackup = false
 
 --scroll
 vim.opt.scrolloff = 999 -- keeps cursor in middle of screen when scrolling long files
