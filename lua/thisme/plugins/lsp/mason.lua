@@ -30,6 +30,7 @@ return {
       ensure_installed = {
         "gopls",
         "html",
+        "clangd",
         -- "htmx_lsp",
         "cssls",
         "svelte",
